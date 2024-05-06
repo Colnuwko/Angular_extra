@@ -4,8 +4,9 @@ import { NavbarComponent } from './navigation/navbar/navbar.component';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { ProductComponent } from "./card/product/product.component";
-import { PrCardInt } from "./interfeces";
+
 import { ProductCardModuleComponent } from './product-card-module/product-card-module.component';
+import { PrCardInt } from './interfaces';
 
 
 
@@ -20,6 +21,6 @@ import { ProductCardModuleComponent } from './product-card-module/product-card-m
 export class AppComponent {
   title = 'extra_project';
 
-  card: PrCardInt = {img: 'assets/search.png', discount: 0, name: "Молоко", price: 100};
+  card: PrCardInt = { img: "assets/arrow.png", discount: 0, name: "Молоко", price: 100 };
 
 }
