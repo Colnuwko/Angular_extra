@@ -11,7 +11,7 @@ module.exports = {
       white: "#ffffff",
       black: "#000000",
       green: "#70C05B",
-      metal: "#565584",
+      grey: "#606060",
       tahiti: "#3ab7bf",
       silver: "#414141",
       "bubble-gum": "#ff77e9",
