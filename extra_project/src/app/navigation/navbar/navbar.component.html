@@ -1,0 +1,26 @@
+<div class="flex justify-between my-5 items-center mx-28">
+    <img src="assets/logo.png" />
+    <div class="flex items-center gap-4">
+        <div class="flex items-center bg-green rounded-md p-2">
+            <img src="assets/menu.png" />
+            <div class="text-white mx-3">Каталог</div>
+        </div>
+
+        <form class="rounded-md border border-green flex items-center p-2" #myForm="ngForm"
+            (ngSubmit)="submitForm(myForm)">
+            <input class="mx-4 focus:outline-none" type="text" name="textInput" ngModel placeholder="Найти товар"
+                required />
+            <button type="submit">
+                <img src="assets/search.png" />
+            </button>
+        </form>
+    </div>
+    <div class="flex gap-6">
+        <app-button [imageSrc]="'assets/search.png'" [buttonText]="'Избранное'"
+            [routePath]="'/destination'"></app-button>
+        <app-button [imageSrc]="'assets/search.png'" [buttonText]="'Избранное'"
+            [routePath]="'/destination'"></app-button>
+        <app-button [imageSrc]="'assets/search.png'" [buttonText]="'Избранное'"
+            [routePath]="'/destination'"></app-button>
+    </div>
+</div>
