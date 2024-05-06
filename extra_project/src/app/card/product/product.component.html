@@ -1,20 +1,32 @@
-
-
-
-<div class="w-72 h-96 border border-green p-2">
-  <img class="w-72 h-40" [src]="card.img" alt="Button Image"/>
-<!--  <p *ngIf="card.discount">{{card.discount}}</p>-->
-  <div class="flex flex-col border border-green">
-    <div class=" border border-green"><p>{{card.price}}</p></div>
+<!-- <div class="border-r-0 bg-white max-w-sm">
+  <img class="w-full" [src]="card.img" alt="Button Image" />
+  <div class="flex flex-co">
+    <div class=" ">
+      <p>{{card.price}}</p>
+    </div>
     <div class="">
-        <p>{{card.name}}</p>
-        <p *ngIf="card.country">{{card.country}}</p>
+      <p>{{card.name}}</p>
+      <p *ngIf="card.country">{{card.country}}</p>
     </div>
 
-    <button  class="w-full p-2 gap-2 border border-green rounded text-green text-center">В корзину</button>
+    <button class="">В корзину</button>
+  </div>
+</div> -->
+
+<div class=" rounded shadow-lg bg-white">
+  <img class="" [src]="card.img" alt="Изображение товара">
+  <div class="p-2">
+    <div class="font-bold text-lg pb-2">{{card.price}} P.</div>
+    <div class=" text-base pb-2">{{card.name}}</div>
+    <div class="flex justify-center">
+      <button
+        class="rounded border-2 border-green text-green w-full py-2 hover:bg-orange hover:text-white hover:border-none"
+        (click)="handleClick()">
+        В корзину
+      </button>
+    </div>
   </div>
 </div>
-
 
 <!--<div class="max-w-sm rounded overflow-hidden shadow-lg">-->
 <!--<img class="w-full" [src]="card.img" alt="Button Image">-->

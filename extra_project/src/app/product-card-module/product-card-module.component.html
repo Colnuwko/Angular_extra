@@ -1,8 +1,13 @@
-<div class="flex justify-between mx-28 items-center">
-    <h1 class=" font-bold text-4xl text-silver">{{moduleName}}</h1>
+<div class="mx-28 mb-32">
+    <div class="flex justify-between  items-center mb-10">
+        <h1 class=" font-bold text-4xl text-silver">{{moduleName}}</h1>
 
-    <button class="flex gap-4 text-grey p-2" (click)="handleClick()">{{moduleNameLink}} <img
-            src="assets/arrow.png" /></button>
+        <button class="flex gap-4 text-grey p-2" (click)="handleClick()">{{moduleNameLink}} <img
+                src="assets/arrow.png" /></button>
 
 
+    </div>
+    <div class="flex justify-between">
+        <app-product *ngFor="let card of cards" [card]="card"></app-product>
+    </div>
 </div>
