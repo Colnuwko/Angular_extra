@@ -3,12 +3,13 @@ import { PrCardInt } from '../interfaces';
 import { ServiceService } from '../services/service.service';
 import { NgFor } from '@angular/common';
 import { ProductCardModuleComponent } from '../product-card-module/product-card-module.component';
-import { ProductComponent } from '../card/product/product.component';
+
+import { CardGoodsComponent } from '../card-goods/card-goods.component';
 
 @Component({
   selector: 'app-product-list',
   standalone: true,
-  imports: [NgFor, ProductComponent],
+  imports: [NgFor, CardGoodsComponent],
   templateUrl: './product-list.component.html',
   styleUrl: './product-list.component.css',
   providers: [ServiceService]
