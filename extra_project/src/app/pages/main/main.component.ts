@@ -10,5 +10,5 @@ import { ProductCardModuleComponent } from '../../product-card-module/product-ca
 })
 export class MainComponent {
   cardsNumberDiscounts: number[] = [1, 3, 4, 5];
-  cardsNumberNew: number[] = [2, 6, 8, 7];
+  cardsNumberNew: number[] = [2, 4, 1, 5];
 }

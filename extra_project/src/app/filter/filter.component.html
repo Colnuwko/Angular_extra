@@ -1,0 +1,20 @@
+<div>
+    <h1>Фильтр</h1>
+    <div>
+        <label>Цена</label>
+        <button (click)="clearFilters()">Очистить</button>
+        <input type="number" [(ngModel)]="minPrice" placeholder="Мин">
+        <input type="number" [(ngModel)]="maxPrice" placeholder="Макс">
+    </div>
+    <div>
+        <label>Категории:</label>
+        <select [(ngModel)]="selectedCategory">
+            <option *ngFor="let category of categories" [value]="category">{{ category }}</option>
+        </select>
+    </div>
+    <div>
+        <input type="checkbox" [(ngModel)]="inStock">
+        <label>В наличии</label>
+    </div>
+
+</div>

@@ -22,7 +22,6 @@ export class ServiceService {
 
   getCards(): Observable<PrCardInt[]> {
     return this.http.get<PrCardInt[]>(this.cardsUrl);
-
   }
   getCardsByNumber(ids: number[]): Observable<PrCardInt[]> {
     return this.http.get<PrCardInt[]>(this.cardsUrl).pipe(
@@ -31,6 +30,4 @@ export class ServiceService {
       })
     );
   }
-
 }
-
