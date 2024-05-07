@@ -8,6 +8,7 @@ export interface PrCardInt {
     country: string,
     brand: string,
     count: number
+
 }
 export interface Patgs {
     new: string

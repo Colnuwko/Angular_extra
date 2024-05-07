@@ -1,5 +1,15 @@
-<div class="flex">
-    <app-product-img [product_id]=product_id></app-product-img>
-    <app-product-info [product_id]=product_id></app-product-info>
-    <app-product-similar></app-product-similar>
+<div class="mx-28 mt-16 mb-24">
+    <div *ngIf="card && card.length > 0">
+        <h1 class="mb-12 text-silver text-2xl  text-bold">{{ card[0].name }}</h1>
+    </div>
+    <div class="flex h-96 gap-10">
+        <div class="basis-2/5 bg-white flex ">
+            <app-product-img class="self-center" [product_id]=product_id></app-product-img>
+        </div>
+
+        <app-product-info class="basis-2/5" [product_id]=product_id></app-product-info>
+        <app-product-similar class="basis-1/5"></app-product-similar>
+    </div>
 </div>
+<app-product-card-module [moduleName]="'Акции'" [moduleNameLink]="'Все акции'"
+    [cardsNumber]="cardsNumberDiscounts"></app-product-card-module>

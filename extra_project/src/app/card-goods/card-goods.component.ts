@@ -2,7 +2,7 @@ import { Component, Input } from '@angular/core';
 import { PrCardInt, componentMapping } from '../interfaces';
 import { ServiceService } from '../services/service.service';
 import { Router, RouterLink } from '@angular/router';
-import {BasketService} from "../services/basket.service";
+import { BasketService } from "../services/basket.service";
 
 @Component({
   selector: 'app-card-goods',
@@ -17,13 +17,9 @@ export class CardGoodsComponent {
 
 
 
-  constructor(private router: Router, private productService: ServiceService, private basketService:BasketService) { }
+  constructor(private router: Router, private productService: ServiceService, private basketService: BasketService) { }
   navigateToComponent(): void {
-
-
-
-    this.router.navigate(['/goods', this.card.id, { myId: this.card.id }]);
-
+    this.router.navigate(['/goods', this.card.id]);
   }
   handleClick() {
     this.basketService.addToBusket(this.card);
