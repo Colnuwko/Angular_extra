@@ -1,5 +1,8 @@
 <div class="flex justify-between my-5 items-center mx-28 ">
-    <img src="assets/navbar/logo.png" />
+    <a routerLink="/">
+        <img src="assets/navbar/logo.png" />
+    </a>
+
     <div class="flex items-center gap-4">
         <div class="flex items-center bg-green rounded-md p-2">
             <img src="assets/navbar/menu.png" />
@@ -17,7 +20,7 @@
     </div>
     <div class="flex gap-6 items-center">
         <app-button [imageSrc]="'assets/navbar/heart.png'" [buttonText]="'Избранное'"
-            [routePath]="'/destination'"></app-button>
+            [routePath]="'/discounts'"></app-button>
         <app-button [imageSrc]="'assets/navbar/orders.png'" [buttonText]="'Заказы'"
             [routePath]="'/destination'"></app-button>
         <app-button [imageSrc]="'assets/navbar/shopp.png'" [buttonText]="'Корзина'"
