@@ -27,7 +27,8 @@ export class ProductListComponent {
 
   loadCards() {
     this.productService.getCardsPage(this.page, this.pageSize).subscribe(
-      (data: PrCardInt[]) => {
+      (data: PrCardInt[]
+            ) => {
         this.cards = data;
       },
       (error) => {

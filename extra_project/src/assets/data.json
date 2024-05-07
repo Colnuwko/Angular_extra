@@ -7,7 +7,8 @@
     "price": 159.99,
     "discount": 50,
     "country": "Россия",
-    "brand": "МЯСНАЯ ИСТОРИЯ"
+    "brand": "МЯСНАЯ ИСТОРИЯ",
+    "count": 1
   },
   {
     "id": 2,
@@ -17,7 +18,8 @@
     "price": 59.99,
     "discount": 0,
     "country": "Россия",
-    "brand": "МЯСНАЯ ИСТОРИЯ"
+    "brand": "МЯСНАЯ ИСТОРИЯ",
+    "count": 1
   },
   {
     "id": 3,
@@ -27,7 +29,8 @@
     "price": 649.99,
     "discount": 15,
     "country": "Россия",
-    "brand": "Черкизово"
+    "brand": "Черкизово",
+    "count": 1
   },
   {
     "id": 4,
@@ -37,7 +40,8 @@
     "price": 64.99,
     "discount": 0,
     "country": "Россия",
-    "brand": "Простоквашино"
+    "brand": "Простоквашино",
+    "count": 1
   },
   {
     "id": 5,
@@ -47,7 +51,8 @@
     "price": 147.99,
     "discount": 0,
     "country": "Россия",
-    "brand": "Плавит"
+    "brand": "Плавит",
+    "count": 1
   },
   {
     "id": 6,
@@ -57,7 +62,8 @@
     "price": 99.99,
     "discount": 10,
     "country": "Россия",
-    "brand": "Глазов"
+    "brand": "Глазов",
+    "count": 1
   },
   {
     "id": 7,
@@ -67,7 +73,8 @@
     "price": 199.99,
     "discount": 0,
     "country": "Россия",
-    "brand": "Ферма Здоровых Куриц"
+    "brand": "Ферма Здоровых Куриц",
+    "count": 1
   },
   {
     "id": 8,
@@ -77,7 +84,8 @@
     "price": 149.99,
     "discount": 0,
     "country": "Россия",
-    "brand": "Свежий Урожай"
+    "brand": "Свежий Урожай",
+    "count": 1
   },
   {
     "id": 9,
@@ -87,7 +95,8 @@
     "price": 79.99,
     "discount": 20,
     "country": "Германия",
-    "brand": "Ritter Sport"
+    "brand": "Ritter Sport",
+    "count": 1
   },
   {
     "id": 10,
@@ -97,7 +106,8 @@
     "price": 49.99,
     "discount": 0,
     "country": "Великобритания",
-    "brand": "Mornflake"
+    "brand": "Mornflake",
+    "count": 1
   },
   {
     "id": 11,
@@ -107,7 +117,8 @@
     "price": 49.99,
     "discount": 0,
     "country": "Великобритания",
-    "brand": "Mornflake"
+    "brand": "Mornflake",
+    "count": 1
   },
   {
     "id": 12,
@@ -117,7 +128,8 @@
     "price": 49.99,
     "discount": 0,
     "country": "Великобритания",
-    "brand": "Mornflake"
+    "brand": "Mornflake",
+    "count": 1
   },
   {
     "id": 13,
@@ -127,7 +139,8 @@
     "price": 49.99,
     "discount": 0,
     "country": "Великобритания",
-    "brand": "Mornflake"
+    "brand": "Mornflake",
+    "count": 1
   },
   {
     "id": 14,
@@ -137,6 +150,7 @@
     "price": 49.99,
     "discount": 0,
     "country": "Великобритания",
-    "brand": "Mornflake"
+    "brand": "Mornflake",
+    "count": 1
   }
 ]
