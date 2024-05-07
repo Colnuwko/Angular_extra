@@ -4,13 +4,14 @@ import { NavbarComponent } from './navigation/navbar/navbar.component';
 import { BrowserModule } from '@angular/platform-browser';
 import {ProductComponent} from "./product/product.component";
 import {PrCardInt} from "./interfaces";
+import { HttpClientModule } from '@angular/common/http';
 
 
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, NavbarComponent, RouterLink, ProductComponent],
+  imports: [RouterOutlet, NavbarComponent, RouterLink, ProductComponent, HttpClientModule],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
