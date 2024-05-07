@@ -2,11 +2,12 @@ import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { componentMapping } from '../../interfaces';
 import { FilterComponent } from '../../filter/filter.component';
+import { ProductListComponent } from '../../product-list/product-list.component';
 
 @Component({
   selector: 'app-all-products',
   standalone: true,
-  imports: [FilterComponent],
+  imports: [FilterComponent, ProductListComponent],
   templateUrl: './all-products.component.html',
   styleUrl: './all-products.component.css'
 })
