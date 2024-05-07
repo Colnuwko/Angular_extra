@@ -3,6 +3,7 @@ import { ActivatedRoute } from '@angular/router';
 import { ServiceService } from '../../services/service.service';
 import { PrCardInt } from '../../interfaces';
 import { CommonModule } from '@angular/common';
+import { BasketService } from '../../services/basket.service';
 
 @Component({
   selector: 'app-product-info',
@@ -14,7 +15,7 @@ import { CommonModule } from '@angular/common';
 export class ProductInfoComponent {
   @Input() product_id!: number
   card!: PrCardInt[]
-  constructor(private route: ActivatedRoute, private productService: ServiceService) { }
+  constructor(private route: ActivatedRoute, private productService: ServiceService, private basketService: BasketService) { }
   ngOnInit(): void {
     this.productService.getCardsByNumber([this.product_id]).subscribe(
       (data: PrCardInt[]) => {
@@ -24,5 +25,8 @@ export class ProductInfoComponent {
         console.error('Error fetching cards:', error);
       }
     );
+  }
+  handleClick() {
+    this.basketService.addToBusket(this.card[0]);
   }
 }

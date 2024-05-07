@@ -6,17 +6,19 @@ import { PrCardInt } from '../interfaces';
 import { CommonModule, NgIf } from '@angular/common';
 import { ServiceService } from '../services/service.service';
 import { ActivatedRoute, Router, RouterLink } from '@angular/router';
+import { ProductCardModuleComponent } from '../product-card-module/product-card-module.component';
 
 
 @Component({
   selector: 'app-product',
   standalone: true,
-  imports: [ProductImgComponent, ProductInfoComponent, ProductSimilarComponent, CommonModule, RouterLink, NgIf],
+  imports: [ProductImgComponent, ProductInfoComponent, ProductSimilarComponent, CommonModule, RouterLink, NgIf, ProductCardModuleComponent],
   providers: [ServiceService],
   templateUrl: './product.component.html',
   styleUrl: './product.component.css'
 })
 export class ProductComponent implements OnInit {
+  cardsNumberDiscounts: number[] = [2, 4, 3, 1];
   card!: PrCardInt[];
   constructor(private router: Router, private productService: ServiceService, private route: ActivatedRoute) { }
   product_id!: number;
@@ -31,12 +33,6 @@ export class ProductComponent implements OnInit {
       }
       this.fetchData();
     });
-
-
-
-
-
-
   }
 
   fetchData() {
