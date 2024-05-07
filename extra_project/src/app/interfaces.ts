@@ -1,5 +1,5 @@
 export interface PrCardInt {
-    id?: number,
+    id: number,
     img?: string,
     name: string,
     weight?: number,

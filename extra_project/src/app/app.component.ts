@@ -25,6 +25,6 @@ import { ProductComponent } from './product/product.component';
 })
 export class AppComponent {
   title = 'extra_project';
-  card: PrCardInt = { img: "assets/arrow.png", discount: 0, name: "Молоко", price: 100 };
+
 
 }
