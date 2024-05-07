@@ -1,14 +1,14 @@
 import { Component, Input } from '@angular/core';
 import { PrCardInt, componentMapping } from '../interfaces';
-import { ProductComponent } from '../card/product/product.component';
 import { NgFor } from '@angular/common';
 import { Router, RouterLink } from '@angular/router';
 import { ServiceService } from '../services/service.service';
+import { CardGoodsComponent } from '../card-goods/card-goods.component';
 
 @Component({
   selector: 'app-product-card-module',
   standalone: true,
-  imports: [ProductComponent, NgFor, RouterLink],
+  imports: [CardGoodsComponent, NgFor, RouterLink],
   templateUrl: './product-card-module.component.html',
   styleUrl: './product-card-module.component.css',
   providers: [ServiceService],

@@ -1,6 +1,6 @@
 <div class="flex flex-col items-center">
     <div class="grid grid-cols-3 gap-10">
-        <app-product *ngFor="let card of cards" [card]="card"></app-product>
+        <app-card-goods *ngFor="let card of cards" [card]="card"></app-card-goods>
     </div>
     <button class="m-12 py-2 px-8 bg-button rounded text-base text-grey" (click)="loadMore()">Показать ещё</button>
 </div>
