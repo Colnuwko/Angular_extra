@@ -3,7 +3,7 @@ import { RouterLink, RouterLinkActive, RouterModule, RouterOutlet } from '@angul
 import { NavbarComponent } from './navigation/navbar/navbar.component';
 import { BrowserModule } from '@angular/platform-browser';
 
-import {ProductComponent} from "./product/product.component";
+
 
 
 
@@ -13,6 +13,7 @@ import { MainComponent } from './pages/main/main.component';
 import { CommonModule } from '@angular/common';
 import { ServiceService } from './services/service.service';
 import { HttpClientModule } from '@angular/common/http';
+import {ProductComponent} from "./card/product/product.component";
 
 
 
@@ -20,7 +21,7 @@ import { HttpClientModule } from '@angular/common/http';
   selector: 'app-root',
   standalone: true,
 
-  imports: [RouterOutlet, NavbarComponent, RouterLink, MainComponent, CommonModule, RouterLinkActive, RouterModule, HttpClientModule],
+  imports: [RouterOutlet, NavbarComponent, RouterLink, MainComponent, CommonModule, RouterLinkActive, RouterModule, HttpClientModule, ProductComponent],
 
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',

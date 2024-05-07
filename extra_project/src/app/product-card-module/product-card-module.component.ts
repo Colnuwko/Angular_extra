@@ -16,7 +16,7 @@ import { ServiceService } from '../services/service.service';
 export class ProductCardModuleComponent {
   @Input() moduleName!: string;
   @Input() moduleNameLink!: string;
-  @Input() cardsNumber!: [];
+  @Input() cardsNumber!: number[];
 
   cards: PrCardInt[] = [];
 
@@ -33,7 +33,7 @@ export class ProductCardModuleComponent {
     }
   }
   ngOnInit(): void {
-    this.productService.getCardsByNumber([1, 4, 5, 6]).subscribe(
+    this.productService.getCardsByNumber(this.cardsNumber).subscribe(
       (data: PrCardInt[]) => {
         this.cards = data;
       },
