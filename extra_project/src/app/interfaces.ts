@@ -6,7 +6,9 @@ export interface PrCardInt {
     price: number,
     discount: number,
     country: string,
-    brand: string
+    brand: string,
+    count: number
+
 }
 export interface Patgs {
     new: string

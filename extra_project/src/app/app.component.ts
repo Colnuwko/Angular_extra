@@ -8,8 +8,10 @@ import { MainComponent } from './pages/main/main.component';
 import { CommonModule } from '@angular/common';
 import { ServiceService } from './services/service.service';
 import { HttpClientModule } from '@angular/common/http';
-import { ProductComponent } from './product/product.component';
 
+
+
+import {BasketService} from "./services/basket.service";
 
 
 
@@ -17,10 +19,11 @@ import { ProductComponent } from './product/product.component';
   selector: 'app-root',
   standalone: true,
 
-  imports: [RouterOutlet, NavbarComponent, RouterLink, MainComponent, CommonModule, RouterLinkActive, RouterModule, HttpClientModule, ProductComponent],
+  imports: [RouterOutlet, NavbarComponent, RouterLink, MainComponent, CommonModule, RouterLinkActive, RouterModule, HttpClientModule],
 
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
+  providers: [BasketService]
 
 })
 export class AppComponent {
@@ -28,3 +31,4 @@ export class AppComponent {
 
 
 }
+
