@@ -1,8 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { componentMapping } from '../../interfaces';
-import { FilterComponent } from '../../filter/filter.component';
+
 import { ProductListComponent } from '../../product-list/product-list.component';
+import { FilterComponent } from '../../filter/filter.component';
 
 @Component({
   selector: 'app-all-products',

@@ -3,50 +3,140 @@
     "id": 1,
     "img": "assets/food/sausages.png",
     "name": "Сосиски МЯСНАЯ ИСТОРИЯ Микс молочные и с сыром, 400г",
-    "weight" : 400,
+    "weight": 400,
     "price": 159.99,
     "discount": 50,
     "country": "Россия",
-    "brand" : "МЯСНАЯ ИСТОРИЯ"
+    "brand": "МЯСНАЯ ИСТОРИЯ"
   },
   {
     "id": 2,
     "img": "assets/food/sliced_sausage.png",
     "name": "Колбаса сырокопченая МЯСНАЯ ИСТОРИЯ Сальчичон и Тоскан, 100г",
-    "weight" : 100,
+    "weight": 100,
     "price": 59.99,
     "discount": 0,
     "country": "Россия",
-    "brand" : "МЯСНАЯ ИСТОРИЯ"
+    "brand": "МЯСНАЯ ИСТОРИЯ"
   },
   {
     "id": 3,
     "img": "assets/food/big_sausage.png",
     "name": "Колбаса сырокопчёная Черкизово Сальчичон, 1000г",
-    "weight" : 1000,
+    "weight": 1000,
     "price": 649.99,
     "discount": 15,
     "country": "Россия",
-    "brand" : "Черкизово"
+    "brand": "Черкизово"
   },
   {
     "id": 4,
     "img": "assets/food/milk.png",
     "name": "Молоко Простоквашино отборное пастеризованное 3.4-4.5%, 930мл",
-    "weight" : 930,
+    "weight": 930,
     "price": 64.99,
     "discount": 0,
     "country": "Россия",
-    "brand" : "Простоквашино"
+    "brand": "Простоквашино"
   },
   {
     "id": 5,
     "img": "assets/food/cream.png",
     "name": "Крем-сыр DORBLU A la creme с голубой плесенью 65%, 80г",
-    "weight" : 80,
+    "weight": 80,
     "price": 147.99,
     "discount": 0,
     "country": "Россия",
-    "brand" : "Плавит"
+    "brand": "Плавит"
+  },
+  {
+    "id": 6,
+    "img": "assets/food/milk.png",
+    "name": "Сыр Российский Глазов, 200г",
+    "weight": 200,
+    "price": 99.99,
+    "discount": 10,
+    "country": "Россия",
+    "brand": "Глазов"
+  },
+  {
+    "id": 7,
+    "img": "assets/food/milk.png",
+    "name": "Крылья куриные охлажденные, 500г",
+    "weight": 500,
+    "price": 199.99,
+    "discount": 0,
+    "country": "Россия",
+    "brand": "Ферма Здоровых Куриц"
+  },
+  {
+    "id": 8,
+    "img": "assets/food/milk.png",
+    "name": "Сок апельсиновый свежевыжатый, 1л",
+    "weight": 1000,
+    "price": 149.99,
+    "discount": 0,
+    "country": "Россия",
+    "brand": "Свежий Урожай"
+  },
+  {
+    "id": 9,
+    "img": "assets/food/milk.png",
+    "name": "Шоколад Ritter Sport горький, 100г",
+    "weight": 100,
+    "price": 79.99,
+    "discount": 20,
+    "country": "Германия",
+    "brand": "Ritter Sport"
+  },
+  {
+    "id": 10,
+    "img": "assets/food/milk.png",
+    "name": "Крупа овсяная Mornflake, 500г",
+    "weight": 500,
+    "price": 49.99,
+    "discount": 0,
+    "country": "Великобритания",
+    "brand": "Mornflake"
+  },
+  {
+    "id": 11,
+    "img": "assets/food/milk.png",
+    "name": "Крупа овсяная Mornflake, 500г",
+    "weight": 500,
+    "price": 49.99,
+    "discount": 0,
+    "country": "Великобритания",
+    "brand": "Mornflake"
+  },
+  {
+    "id": 12,
+    "img": "assets/food/milk.png",
+    "name": "Крупа овсяная Mornflake, 500г",
+    "weight": 500,
+    "price": 49.99,
+    "discount": 0,
+    "country": "Великобритания",
+    "brand": "Mornflake"
+  },
+  {
+    "id": 13,
+    "img": "assets/food/milk.png",
+    "name": "Крупа овсяная Mornflake, 500г",
+    "weight": 500,
+    "price": 49.99,
+    "discount": 0,
+    "country": "Великобритания",
+    "brand": "Mornflake"
+  },
+  {
+    "id": 14,
+    "img": "assets/food/milk.png",
+    "name": "Крупа овсяная Mornflake, 500г",
+    "weight": 500,
+    "price": 49.99,
+    "discount": 0,
+    "country": "Великобритания",
+    "brand": "Mornflake"
   }
 ]

@@ -15,7 +15,7 @@ module.exports = {
       orange: "#FF6633",
       silver: "#414141",
       "bubble-gum": "#ff77e9",
-      bermuda: "#78dcca",
+      button: "#F3F2F1",
     },
     fontFamily: {
       rubik: ["Rubik", "sans-serif"],
