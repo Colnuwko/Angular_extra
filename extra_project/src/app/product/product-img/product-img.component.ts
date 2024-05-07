@@ -2,11 +2,12 @@ import { Component, Input } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { ServiceService } from '../../services/service.service';
 import { PrCardInt } from '../../interfaces';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-product-img',
   standalone: true,
-  imports: [],
+  imports: [CommonModule],
   templateUrl: './product-img.component.html',
   styleUrl: './product-img.component.css'
 })
@@ -23,6 +24,5 @@ export class ProductImgComponent {
         console.error('Error fetching cards:', error);
       }
     );
-    
   }
 }

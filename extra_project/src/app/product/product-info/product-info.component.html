@@ -1,1 +1,13 @@
-
+<div class="flex" *ngIf="card && card.length > 0">
+    <ul>
+        <li>
+            Бренд {{this.card[0].brand}}
+        </li>
+        <li>
+            Страна {{card[0].country}}
+        </li>
+        <li>
+            Вес {{card[0].weight}} г
+        </li>
+    </ul>
+</div>
