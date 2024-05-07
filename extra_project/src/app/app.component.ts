@@ -7,13 +7,12 @@ import { BrowserModule } from '@angular/platform-browser';
 
 
 
-import { ProductCardModuleComponent } from './product-card-module/product-card-module.component';
 import { PrCardInt } from './interfaces';
 import { MainComponent } from './pages/main/main.component';
 import { CommonModule } from '@angular/common';
 import { ServiceService } from './services/service.service';
 import { HttpClientModule } from '@angular/common/http';
-import {ProductComponent} from "./card/product/product.component";
+import { ProductComponent } from './product/product.component';
 
 
 

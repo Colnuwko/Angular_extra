@@ -8,5 +8,5 @@ import { Component } from '@angular/core';
   styleUrl: './product-similar.component.css'
 })
 export class ProductSimilarComponent {
-
+  
 }
