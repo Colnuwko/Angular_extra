@@ -37,6 +37,17 @@ export class ProductListComponent {
 
   loadMore() {
     this.page++;
-    this.loadCards();
+    this.loadMoreCards();
+  }
+
+  loadMoreCards() {
+    this.productService.getCardsPage(this.page, this.pageSize).subscribe(
+      (data: PrCardInt[]) => {
+        this.cards = this.cards.concat(data); // Объединяем новые данные с текущими
+      },
+      (error) => {
+        console.error('Error fetching more cards:', error);
+      }
+    );
   }
 }
