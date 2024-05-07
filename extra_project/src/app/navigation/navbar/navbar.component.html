@@ -1,8 +1,11 @@
-<div class="flex justify-between my-5 items-center mx-28">
-    <img src="assets/logo.png" />
+<div class="flex justify-between my-5 items-center mx-28 ">
+    <a routerLink="/">
+        <img src="assets/navbar/logo.png" />
+    </a>
+
     <div class="flex items-center gap-4">
         <div class="flex items-center bg-green rounded-md p-2">
-            <img src="assets/menu.png" />
+            <img src="assets/navbar/menu.png" />
             <div class="text-white mx-3">Каталог</div>
         </div>
 
@@ -11,16 +14,16 @@
             <input class="mx-4 focus:outline-none" type="text" name="textInput" ngModel placeholder="Найти товар"
                 required />
             <button type="submit">
-                <img src="assets/search.png" />
+                <img src="assets/navbar/search.png" />
             </button>
         </form>
     </div>
-    <div class="flex gap-6">
-        <app-button [imageSrc]="'assets/search.png'" [buttonText]="'Избранное'"
+    <div class="flex gap-6 items-center">
+        <app-button [imageSrc]="'assets/navbar/heart.png'" [buttonText]="'Избранное'"
+            [routePath]="'/discounts'"></app-button>
+        <app-button [imageSrc]="'assets/navbar/orders.png'" [buttonText]="'Заказы'"
             [routePath]="'/destination'"></app-button>
-        <app-button [imageSrc]="'assets/search.png'" [buttonText]="'Избранное'"
-            [routePath]="'/destination'"></app-button>
-        <app-button [imageSrc]="'assets/search.png'" [buttonText]="'Избранное'"
+        <app-button [imageSrc]="'assets/navbar/shopp.png'" [buttonText]="'Корзина'"
             [routePath]="'/destination'"></app-button>
     </div>
 </div>

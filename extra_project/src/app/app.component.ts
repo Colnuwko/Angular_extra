@@ -1,9 +1,17 @@
 import { Component } from '@angular/core';
-import { RouterLink, RouterOutlet } from '@angular/router';
+import { RouterLink, RouterLinkActive, RouterModule, RouterOutlet } from '@angular/router';
 import { NavbarComponent } from './navigation/navbar/navbar.component';
 import { BrowserModule } from '@angular/platform-browser';
+
 import {ProductComponent} from "./product/product.component";
-import {PrCardInt} from "./interfaces";
+
+
+
+import { ProductCardModuleComponent } from './product-card-module/product-card-module.component';
+import { PrCardInt } from './interfaces';
+import { MainComponent } from './pages/main/main.component';
+import { CommonModule } from '@angular/common';
+import { ServiceService } from './services/service.service';
 import { HttpClientModule } from '@angular/common/http';
 
 
@@ -11,11 +19,15 @@ import { HttpClientModule } from '@angular/common/http';
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, NavbarComponent, RouterLink, ProductComponent, HttpClientModule],
+
+  imports: [RouterOutlet, NavbarComponent, RouterLink, MainComponent, CommonModule, RouterLinkActive, RouterModule, HttpClientModule],
+
   templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+  styleUrl: './app.component.css',
+
 })
 export class AppComponent {
   title = 'extra_project';
- // card: PrCardInt = {img: "sf,dfsdf", name: "sf,dfsdf", price:23};
+  card: PrCardInt = { img: "assets/arrow.png", discount: 0, name: "Молоко", price: 100 };
+
 }
