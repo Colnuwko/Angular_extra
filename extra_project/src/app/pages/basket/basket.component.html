@@ -1,1 +1,38 @@
-<p>basket works!</p>
+<div class="mx-28">
+  <div class="w-full pt-10 pb-10"><p class="font-bold text-6xl">Корзина!</p></div>
+  <div class="maine pt-2 flex flex-row">
+      <div class="basis-3/5">
+          <app-card  *ngFor="let card of cards"  [card]="card"></app-card>
+      </div>
+      <div class="basis-2/5">
+          <div class="flex flex-col min-h-72 justify-between" >
+            <div class="basis-1/4 border border-t-0 border-l-0 border-r-0 border-b-green ">
+              <div class=" flex flex-row p-2"><input class="pt-1" type="checkbox" id="switch" /><label  for="switch"></label><p class="ml-2">Списать {{bonuses}}₽</p> </div>
+              <p class="opacity-40 p-2">На карте накоплено {{bonuses}} ₽</p>
+            </div>
+            <div class="basis-1/4 border border-t-0 border-l-0 border-r-0 border-b-green ">
+               <div class="flex flex-row justify-between p-2">
+                <p class="opacity-40">{{count}} товара</p>
+                <p class="font-bold text-2xl">{{summ}} ₽</p>
+              </div>
+              <div class="flex flex-row justify-between p-2">
+                <p class="opacity-40">Скидка</p>
+                <p class="font-bold text-2xl">{{discount}} ₽</p>
+              </div>
+            </div>
+            <div class="basis-1/4 border border-t-0 border-l-0 border-r-0 border-b-green ">
+              <div class="flex flex-row justify-between p-2">
+                <p class="opacity-40">Итог</p>
+                <p class="font-bold text-2xl">{{itog}} ₽</p>
+              </div>
+            </div>
+            <div class="basis-1/4 border border-t-0 border-l-0 border-r-0 border-b-green ">
+              <div class="bg-green bg-opacity-40"><button class="w-full m-2 p-2 g-2 " type="submit">Оформить заказ</button></div>
+            </div>
+          </div>
+      </div>
+  </div>
+</div>
+
+
+<footer class="min-h-28"></footer>
