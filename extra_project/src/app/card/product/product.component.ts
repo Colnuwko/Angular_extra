@@ -1,6 +1,8 @@
-import { Component, Input } from '@angular/core';
-import { CommonModule } from "@angular/common";
-import { PrCardInt } from "../../interfaces";
+
+import {Component, Input} from '@angular/core';
+import {CommonModule} from "@angular/common";
+import {PrCardInt} from "../../interfaces";
+
 
 
 @Component({

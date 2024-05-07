@@ -7,7 +7,7 @@ import { PrCardInt } from '../interfaces';
   providedIn: 'root'
 })
 export class ServiceService {
-  private cardsUrl = 'assets/array.json'; // Путь к вашему JSON-файлу
+  private cardsUrl = 'assets/data.json'; // Путь к вашему JSON-файлу
 
 
 
@@ -22,6 +22,7 @@ export class ServiceService {
 
   getCards(): Observable<PrCardInt[]> {
     return this.http.get<PrCardInt[]>(this.cardsUrl);
+
   }
   getCardsByNumber(ids: number[]): Observable<PrCardInt[]> {
     return this.http.get<PrCardInt[]>(this.cardsUrl).pipe(
@@ -30,4 +31,6 @@ export class ServiceService {
       })
     );
   }
+
 }
+

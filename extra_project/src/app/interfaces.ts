@@ -18,3 +18,4 @@ export const componentMapping: ComponentMapping = {
     'Акции': 'discounts',
     // Другие компоненты
 };
+
