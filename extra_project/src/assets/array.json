@@ -1,0 +1,82 @@
+[
+    {
+        "id": 1,
+        "img": "assets/bl.png",
+        "name": "Product 1",
+        "weight": 200,
+        "price": 100,
+        "discount": 10,
+        "country": "Country A",
+        "brand": "Brand X"
+    },
+    {
+        "id": 2,
+        "img": "assets/bl.png",
+        "name": "Product 2",
+        "weight": 200,
+        "price": 100,
+        "discount": 10,
+        "country": "Country A",
+        "brand": "Brand X"
+    },
+    {
+        "id": 3,
+        "img": "assets/bl.png",
+        "name": "Product 3",
+        "weight": 200,
+        "price": 100,
+        "discount": 10,
+        "country": "Country A",
+        "brand": "Brand X"
+    },
+    {
+        "id": 4,
+        "img": "assets/bl.png",
+        "name": "Product 4",
+        "weight": 200,
+        "price": 100,
+        "discount": 10,
+        "country": "Country A",
+        "brand": "Brand X"
+    },
+    {
+        "id": 5,
+        "img": "assets/bl.png",
+        "name": "Product 5",
+        "weight": 200,
+        "price": 100,
+        "discount": 10,
+        "country": "Country A",
+        "brand": "Brand X"
+    },
+    {
+        "id": 6,
+        "img": "assets/bl.png",
+        "name": "Product 6",
+        "weight": 200,
+        "price": 100,
+        "discount": 10,
+        "country": "Country A",
+        "brand": "Brand X"
+    },
+    {
+        "id": 7,
+        "img": "assets/bl.png",
+        "name": "Product 7",
+        "weight": 200,
+        "price": 100,
+        "discount": 10,
+        "country": "Country A",
+        "brand": "Brand X"
+    },
+    {
+        "id": 8,
+        "img": "assets/bl.png",
+        "name": "Product 8",
+        "weight": 200,
+        "price": 100,
+        "discount": 10,
+        "country": "Country A",
+        "brand": "Brand X"
+    }
+]
