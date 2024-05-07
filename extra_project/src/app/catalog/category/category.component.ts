@@ -10,7 +10,6 @@ import { RouterLink } from '@angular/router';
 })
 export class CategoryComponent {
   @Input() imageSrc!: string;
-  @Input() categoryWidth!: number;
   @Input() categoryText!: string;
   @Input() routePath!: string;
 }
