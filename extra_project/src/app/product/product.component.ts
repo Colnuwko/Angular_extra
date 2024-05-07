@@ -21,6 +21,7 @@ export class ProductComponent {
   constructor(private router: Router, private productService: ServiceService){ }
 
   ngOnInit(): void {
+    this.product_id = 1 // пока хард код для теста
     this.productService.getCardsByNumber([this.product_id]).subscribe(
       (data: PrCardInt[]) => {
         this.card = data;
