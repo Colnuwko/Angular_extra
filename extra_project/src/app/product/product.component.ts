@@ -5,7 +5,7 @@ import { ProductSimilarComponent } from './product-similar/product-similar.compo
 import { PrCardInt } from '../interfaces';
 import { CommonModule } from '@angular/common';
 import { ServiceService } from '../services/service.service';
-import { Router, RouterLink } from '@angular/router';
+import { ActivatedRoute, Router, RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-product',
@@ -15,16 +15,21 @@ import { Router, RouterLink } from '@angular/router';
   templateUrl: './product.component.html',
   styleUrl: './product.component.css'
 })
-export class ProductComponent {
+export class ProductComponent implements OnInit {
   card: PrCardInt[] = []
-  @Input() product_id!: number
-  constructor(private router: Router, private productService: ServiceService){ }
+  constructor(private router: Router, private productService: ServiceService, private route: ActivatedRoute) { }
+  product_id!: number;
 
   ngOnInit(): void {
-    this.product_id = 1 // хардкод для теста
+    this.route.params.subscribe(params => {
+      this.product_id = params['myId'];
+      console.log(this.product_id); // Здесь вы можете использовать переданные данные
+    });
+    this.product_id = 3
     this.productService.getCardsByNumber([this.product_id]).subscribe(
       (data: PrCardInt[]) => {
         this.card = data;
+        console.log(this.card)
       },
       (error) => {
         console.error('Error fetching cards:', error);
