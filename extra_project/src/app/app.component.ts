@@ -2,8 +2,8 @@ import { Component } from '@angular/core';
 import { RouterLink, RouterOutlet } from '@angular/router';
 import { NavbarComponent } from './navigation/navbar/navbar.component';
 import { BrowserModule } from '@angular/platform-browser';
-import {ProductComponent} from "./card/product/product.component";
-import {PrCardInt} from "./interfeces";
+import {ProductComponent} from "./product/product.component";
+import {PrCardInt} from "./interfaces";
 
 
 
@@ -16,5 +16,5 @@ import {PrCardInt} from "./interfeces";
 })
 export class AppComponent {
   title = 'extra_project';
-  card: PrCardInt = {image: "sf,dfsdf", sale: "sf,dfsdf", name: "sf,dfsdf", price:"sf,dfsdf"};
+ // card: PrCardInt = {img: "sf,dfsdf", name: "sf,dfsdf", price:23};
 }
