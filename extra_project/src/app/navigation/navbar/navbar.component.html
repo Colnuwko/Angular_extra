@@ -4,10 +4,12 @@
     </a>
 
     <div class="flex items-center gap-4">
+      <a routerLink="/catalog">
         <div class="flex items-center bg-green rounded-md p-2">
             <img src="assets/navbar/menu.png" />
             <div class="text-white mx-3">Каталог</div>
         </div>
+      </a>
 
         <form class="rounded-md border border-green flex items-center p-2" #myForm="ngForm"
             (ngSubmit)="submitForm(myForm)">
