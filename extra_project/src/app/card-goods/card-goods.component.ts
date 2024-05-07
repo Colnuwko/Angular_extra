@@ -21,7 +21,7 @@ export class CardGoodsComponent {
 
 
 
-    this.router.navigate(['/goods', this.card.id, { myId: this.card.id }]);
+    this.router.navigate(['/goods', this.card.id]);
 
   }
 

@@ -1,13 +1,14 @@
-<div class="flex" *ngIf="card && card.length > 0">
-    <ul>
-        <li>
-            Бренд {{this.card[0].brand}}
-        </li>
-        <li>
-            Страна {{card[0].country}}
-        </li>
-        <li>
-            Вес {{card[0].weight}} г
-        </li>
-    </ul>
+<div class="flex flex-col gap-4 text-silver" *ngIf="card && card.length > 0">
+    <div class="text-silver text-4xl text-bold">{{this.card[0].price}} Р.</div>
+    <div class="h-14 bg-orange rounded text-white text-2xl ">
+        <div class="">
+            В корзину
+        </div>
+    </div>
+    <div>Бренд {{this.card[0].brand}}</div>
+
+    <div> Страна {{card[0].country}}</div>
+
+    <div>Вес {{card[0].weight}} г</div>
+
 </div>

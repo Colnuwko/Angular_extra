@@ -1,12 +1,12 @@
 export interface PrCardInt {
     id: number,
-    img?: string,
+    img: string,
     name: string,
-    weight?: number,
+    weight: number,
     price: number,
-    discount?: number,
-    country?: string,
-    brand?: string
+    discount: number,
+    country: string,
+    brand: string
 }
 export interface Patgs {
     new: string
