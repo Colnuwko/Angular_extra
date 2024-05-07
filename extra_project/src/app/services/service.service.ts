@@ -8,6 +8,9 @@ import { PrCardInt } from '../interfaces';
 })
 export class ServiceService {
   private cardsUrl = 'assets/data.json'; // Путь к вашему JSON-файлу
+
+
+
   constructor(private http: HttpClient) { }
   getCardsPage(page: number, pageSize: number): Observable<PrCardInt[]> {
     const startIndex = (page - 1) * pageSize;
@@ -19,8 +22,8 @@ export class ServiceService {
 
   getCards(): Observable<PrCardInt[]> {
     return this.http.get<PrCardInt[]>(this.cardsUrl);
-  }
 
+  }
   getCardsByNumber(ids: number[]): Observable<PrCardInt[]> {
     return this.http.get<PrCardInt[]>(this.cardsUrl).pipe(
       map((cards: PrCardInt[]) => {
@@ -28,4 +31,5 @@ export class ServiceService {
       })
     );
   }
+
 }
