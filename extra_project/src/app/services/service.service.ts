@@ -11,13 +11,16 @@ export class ServiceService {
   constructor(private http: HttpClient) { }
 
   getCards(): Observable<PrCardInt[]> {
-    return this.http.get<PrCardInt[]>('assets/data.json');
+
+    return this.http.get<PrCardInt[]>('assets/array.json');
   }
   getCardsByNumber(ids: number[]): Observable<PrCardInt[]> {
-    return this.http.get<PrCardInt[]>('assets/data.json').pipe(
+    return this.http.get<PrCardInt[]>('assets/array.json').pipe(
       map((cards: PrCardInt[]) => {
         return cards.filter(card => card.id !== undefined && ids.includes(card.id));
       })
     );
   }
+
 }
+

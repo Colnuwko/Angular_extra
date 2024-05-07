@@ -1,1 +1,41 @@
-<!-- <div>{{card.img}}</div> -->
+
+<!-- <div class="border-r-0 bg-white max-w-sm">
+  <img class="w-full" [src]="card.img" alt="Button Image" />
+  <div class="flex flex-co">
+    <div class=" ">
+      <p>{{card.price}}</p>
+    </div>
+    <div class="">
+      <p>{{card.name}}</p>
+      <p *ngIf="card.country">{{card.country}}</p>
+    </div>
+
+    <button class="">В корзину</button>
+  </div>
+</div> -->
+
+<div class=" rounded shadow-lg bg-white">
+  <img class="" [src]="card.img" alt="Изображение товара">
+  <div class="p-2">
+    <div class="font-bold text-lg pb-2">{{card.price}} P.</div>
+    <div class=" text-base pb-2">{{card.name}}</div>
+    <div class="flex justify-center">
+      <button
+        class="rounded border-2 border-green text-green w-full py-2 hover:bg-orange hover:text-white hover:border-none"
+        (click)="handleClick()">
+        В корзину
+      </button>
+    </div>
+  </div>
+</div>
+
+<!--<div class="max-w-sm rounded overflow-hidden shadow-lg">-->
+<!--<img class="w-full" [src]="card.img" alt="Button Image">-->
+<!--<div class="px-6 py-4">-->
+<!--<div class="font-bold text-xl mb-2">{{card.name}}</div>-->
+<!--<p class="text-gray-700 text-base mb-2">Описание товара</p>-->
+<!--<p class="text-gray-700 text-base mb-2">{{card.price}}</p>-->
+<!--<button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Добавить в корзину</button>-->
+<!--</div>-->
+<!--</div>-->
+
