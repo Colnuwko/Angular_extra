@@ -3,7 +3,9 @@ import { RouterLink, RouterLinkActive, RouterModule, RouterOutlet } from '@angul
 import { NavbarComponent } from './navigation/navbar/navbar.component';
 import { BrowserModule } from '@angular/platform-browser';
 
-import { ProductComponent } from "./card/product/product.component";
+import {ProductComponent} from "./product/product.component";
+
+
 
 import { ProductCardModuleComponent } from './product-card-module/product-card-module.component';
 import { PrCardInt } from './interfaces';
@@ -14,18 +16,18 @@ import { HttpClientModule } from '@angular/common/http';
 
 
 
-
 @Component({
   selector: 'app-root',
   standalone: true,
+
   imports: [RouterOutlet, NavbarComponent, RouterLink, MainComponent, CommonModule, RouterLinkActive, RouterModule, HttpClientModule],
+
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
 
 })
 export class AppComponent {
   title = 'extra_project';
-
   card: PrCardInt = { img: "assets/arrow.png", discount: 0, name: "Молоко", price: 100 };
 
 }

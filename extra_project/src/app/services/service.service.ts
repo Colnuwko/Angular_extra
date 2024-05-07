@@ -11,6 +11,7 @@ export class ServiceService {
   constructor(private http: HttpClient) { }
 
   getCards(): Observable<PrCardInt[]> {
+
     return this.http.get<PrCardInt[]>('assets/array.json');
   }
   getCardsByNumber(ids: number[]): Observable<PrCardInt[]> {
@@ -20,4 +21,6 @@ export class ServiceService {
       })
     );
   }
+
 }
+

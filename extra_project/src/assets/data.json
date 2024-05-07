@@ -1,0 +1,53 @@
+[
+  {
+    "id": 1,
+    "img": "food/sausage.png",
+    "name": "Сосиски МЯСНАЯ ИСТОРИЯ Микс молочные и с сыром, 400г",
+    "weight" : 400,
+    "price": 159.99,
+    "discount": 50,
+    "country": "Россия",
+    "brand" : "МЯСНАЯ ИСТОРИЯ"
+  },
+  {
+    "id": 2,
+    "img": "food/sliced_sausage.png",
+    "name": "Колбаса сырокопченая МЯСНАЯ ИСТОРИЯ Сальчичон и Тоскан, 100г",
+    "weight" : 100,
+    "price": 59.99,
+    "discount": 0,
+    "country": "Россия",
+    "brand" : "МЯСНАЯ ИСТОРИЯ"
+  },
+  {
+    "id": 3,
+    "img": "food/big_sausage.png",
+    "name": "Колбаса сырокопчёная Черкизово Сальчичон, 1000г",
+    "weight" : 1000,
+    "price": 649.99,
+    "discount": 15,
+    "country": "Россия",
+    "brand" : "Черкизово"
+  },
+  {
+    "id": 4,
+    "img": "food/milk.png",
+    "name": "Молоко Простоквашино отборное пастеризованное 3.4-4.5%, 930мл",
+    "weight" : 930,
+    "price": 64.99,
+    "discount": 0,
+    "country": "Россия",
+    "brand" : "Простоквашино"
+  },
+  {
+    "id": 5,
+    "img": "food/cream.png",
+    "name": "Крем-сыр DORBLU A la creme с голубой плесенью 65%, 80г",
+    "weight" : 80,
+    "price": 147.99,
+    "discount": 0,
+    "country": "Россия",
+    "brand" : "Плавит"
+  }
+]
+  
