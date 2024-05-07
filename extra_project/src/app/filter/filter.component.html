@@ -1,20 +1,19 @@
-<div>
-    <h1>Фильтр</h1>
-    <div>
+<div class=" flex flex-col gap-4">
+    <h1 class="bg-button font-bold text-silver p-2">Фильтр</h1>
+    <div class="flex justify-between pt-6 ">
         <label>Цена</label>
         <button (click)="clearFilters()">Очистить</button>
-        <input type="number" [(ngModel)]="minPrice" placeholder="Мин">
-        <input type="number" [(ngModel)]="maxPrice" placeholder="Макс">
+    </div>
+
+    <div class="flex justify-between gap-10">
+        <input class="basis-1/2" type="number" [(ngModel)]="minPrice" placeholder="Мин">
+        <input class="basis-1/2" type="number" [(ngModel)]="maxPrice" placeholder="Макс">
     </div>
     <div>
-        <label>Категории:</label>
+        <label class="pr-4">Категории:</label>
         <select [(ngModel)]="selectedCategory">
             <option *ngFor="let category of categories" [value]="category">{{ category }}</option>
         </select>
     </div>
-    <div>
-        <input type="checkbox" [(ngModel)]="inStock">
-        <label>В наличии</label>
-    </div>
-
+    <button class="bg-orange py-2 rounded text-white" (click)="OnClick()">Применить</button>
 </div>
