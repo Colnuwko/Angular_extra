@@ -32,9 +32,15 @@ export class BasketComponent {
       this.itog = this.summ - this.discount;
       console.log(this.cards);
   });
-
-
   }
 
-
+  CreateOrder(){
+    if(this.cards.length == 0)
+    {
+      alert("Вы не выбрали ни одного товара")
+    }
+    else {
+      alert("Заказ создан");
+    }
+  }
 }
