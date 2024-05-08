@@ -2,8 +2,20 @@
     <div (click)="navigateToComponent()" class="flex justify-center">
         <img class=" h-auto" [src]="card.img" alt="Изображение товара">
     </div>
+    <div class="curtain bg-green" *ngIf="card.discount"><p>-{{card.discount}}%</p></div>
+    <div class="curtain " *ngIf="!card.discount"></div>
     <div class="flex flex-col justify-between p-2 h-full justify-items-start gap-2">
-        <div class="font-bold text-lg ">{{card.price}} ₽.</div>
+      <div class="flex flex-row justify-between" *ngIf="card.discount">
+        <div>
+          <div class="font-bold text-lg ">{{priceWithSale}} ₽.</div>
+          <div>Цена со скидкой</div>
+          </div>
+        <div><div class=" text-lg text-silver ">{{card.price}} ₽.</div>
+          <div>Цена без скидки</div>
+        </div>
+      </div>
+      <div class="font-bold text-lg" *ngIf="!card.discount">{{card.price}} ₽.</div>
+
         <p (click)="navigateToComponent()" class=" text-base  hover:font-bold">{{card.name}}</p>
         <div class="">
             <button

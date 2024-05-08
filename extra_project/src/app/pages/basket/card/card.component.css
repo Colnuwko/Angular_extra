@@ -1,0 +1,10 @@
+.curtain {
+  width: 70px;
+  height: 40px;
+  border-radius: 5px;
+  text-align: center;
+  p {
+    margin-top: 8px ;
+    color: white;
+  }
+}

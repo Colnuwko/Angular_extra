@@ -82,6 +82,11 @@ getPriceWithSale(): number {
   return summ;
 }
 
+getPriceWithSaleForCard(card: PrCardInt):number {
+  let price: number = 0;
+  price = card.price - (card.price * (card.discount)/100);
+  return price;
+}
 removeData(item: PrCardInt) {
   let index=0;
   const currentData = this.dataSubject.getValue();

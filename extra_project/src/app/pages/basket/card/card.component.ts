@@ -1,11 +1,14 @@
 import {Component, Input, OnInit} from '@angular/core';
 import {PrCardInt} from "../../../interfaces";
 import {BasketService} from "../../../services/basket.service";
+import {NgIf} from "@angular/common";
 
 @Component({
   selector: 'app-card',
   standalone: true,
-  imports: [],
+  imports: [
+    NgIf
+  ],
   templateUrl: './card.component.html',
   styleUrl: './card.component.css'
 })
@@ -13,8 +16,10 @@ export class CardComponent implements OnInit{
   constructor(private basketService: BasketService) { }
   @Input() card!: PrCardInt;
   count = 1;
+  priceWithSaleForCard: number = 0;
 ngOnInit(): void {
     this.count = this.basketService.getCount(this.card);
+    this.priceWithSaleForCard = this.basketService.getPriceWithSaleForCard(this.card);
   }
 
 
