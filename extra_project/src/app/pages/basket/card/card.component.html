@@ -12,8 +12,11 @@
           <div>Цена без скидки</div>
         </div>
       </div>
-      <div class=" text-lg text-silver" *ngIf="!card.discount">{{card.price}} ₽.</div>
-        <div class="curtain bg-green" *ngIf="card.discount">
+      <div class="flex flex-col" *ngIf="!card.discount">
+        <div class=" text-lg text-silver" >{{card.price}} ₽.</div>
+        <div>Цена без скидки</div>
+      </div>
+      <div class="curtain bg-green" *ngIf="card.discount">
           <p>-{{card.discount}}%</p>
         </div>
         <div class="text-base pb-2">{{card.name}}</div>
