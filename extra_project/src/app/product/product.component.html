@@ -1,4 +1,4 @@
-<div class="mx-28 mt-16 mb-24">
+<div class="mx-28 mt-16 mb-24" *ngIf="card && card.length > 0">
     <div *ngIf="card && card.length > 0">
         <h1 class="mb-12 text-silver text-2xl  text-bold">{{ card[0].name }}</h1>
     </div>
@@ -7,7 +7,7 @@
             <app-product-img class="self-center" [product_id]=product_id></app-product-img>
         </div>
 
-        <app-product-info class="basis-2/5" [product_id]=product_id></app-product-info>
+        <app-product-info class="basis-2/5" [card]=card[0]></app-product-info>
         <app-product-similar class="basis-1/5"></app-product-similar>
     </div>
 </div>

@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { ServiceService } from '../../services/service.service';
 import { PrCardInt } from '../../interfaces';
@@ -11,7 +11,7 @@ import { CommonModule } from '@angular/common';
   templateUrl: './product-img.component.html',
   styleUrl: './product-img.component.css'
 })
-export class ProductImgComponent {
+export class ProductImgComponent implements OnInit {
   @Input() product_id!: number
   card!: PrCardInt[]
   constructor(private route: ActivatedRoute, private productService: ServiceService) { }
