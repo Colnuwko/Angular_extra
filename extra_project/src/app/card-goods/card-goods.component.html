@@ -14,8 +14,10 @@
           <div>Цена без скидки</div>
         </div>
       </div>
-      <div class="font-bold text-lg" *ngIf="!card.discount">{{card.price}} ₽.</div>
-
+      <div class="flex flex-col" *ngIf="!card.discount">
+        <div class="font-bold text-lg">{{card.price}} ₽.</div>
+        <div>Цена без скидки</div>
+      </div>
         <p (click)="navigateToComponent()" class=" text-base  hover:font-bold">{{card.name}}</p>
         <div class="">
             <button
