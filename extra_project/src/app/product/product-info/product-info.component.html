@@ -1,14 +1,25 @@
-<div class="flex flex-col gap-4 text-silver" *ngIf="card && card.length > 0">
-    <div class="text-silver text-4xl text-bold">{{this.card[0].price}} Р.</div>
+<div class="flex flex-col gap-4 text-silver">
+    <div class="flex justify-between">
+        <div>
+            <div class="text-silver text-4xl font-normal py-4">{{card.price}} Р.</div>
+            <div class="text-silver">Обычная цена</div>
+        </div>
+        <div *ngIf="card.discount">
+            <div class="text-silver text-4xl font-bold py-4">{{priceWithSale}} Р.</div>
+            <div class="text-silver">Цена со скидкой</div>
+        </div>
+
+    </div>
+
     <div class="py-4 bg-orange rounded text-white text-2xl text-center hover:bg-orange2" (click)="handleClick()">
 
         В корзину
 
     </div>
-    <div class="bg-sr p-2">Бренд {{this.card[0].brand}}</div>
+    <div class="bg-sr p-2">Бренд {{card.brand}}</div>
 
-    <div class=" p-2"> Страна {{card[0].country}}</div>
+    <div class=" p-2"> Страна {{card.country}}</div>
 
-    <div class="bg-sr p-2">Вес {{card[0].weight}} г</div>
+    <div class="bg-sr p-2">Вес {{card.weight}} г</div>
 
 </div>
